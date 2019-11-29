@@ -29,9 +29,9 @@ import * as Integrations from "@sentry/integrations";
 const HELLO = "Hello";
 
 Sentry.init({
-  dsn: "https://bec2c6cf33f54632b7eb4667960233ed@sentry.io/1496554",
+  dsn: "https://ff140fb10ead4e08bc04ce31ede29d2b@sentry.io/1795797",
   release: process.env.VUE_APP_RELEASE,
-  environment: "prod",
+  environment: "dev",
   integrations: [new Integrations.Vue({ Vue, attachProps: true })]
 });
 
