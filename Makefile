@@ -19,3 +19,6 @@ associate_commits:
 upload_sourcemaps:
 	sentry-cli --auth-token $(SENTRY_AUTH_TOKEN) releases -o $(SENTRY_ORG) -p $(SENTRY_PROJECT) files $(VERSION) \
 		upload-sourcemaps --url-prefix "~/$(PREFIX)" --rewrite --validate dist/$(PREFIX)
+
+tell_sentry_deploy:
+	sentry-cli releases deploys VERSION new -e ENVIRONMENT
