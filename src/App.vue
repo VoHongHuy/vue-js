@@ -34,6 +34,8 @@ Sentry.init({
   environment: "dev",
   integrations: [new Integrations.Vue({ Vue, attachProps: true })]
 });
+/* TODO add comment*/
+console.log("############test sentry");
 
 export default {
   name: "app",
